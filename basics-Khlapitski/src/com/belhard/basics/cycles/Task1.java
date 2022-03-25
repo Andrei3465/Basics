@@ -13,7 +13,7 @@ public class Task1 {
 		Scanner scanner = new Scanner(System.in);
 		ResultPrinter.printToConsole("Enter positiv integer: ");
 
-		int enteredNumb = ConsoleReader.getIntFromConsolePositive(100);
+		int enteredNumb = ConsoleReader.getIntFromConsolePositive(scanner, 100);
 
 		int sum = Logicutil.addingUpToNumber(enteredNumb);
 		ResultPrinter.printToConsole("The sum of the number is: " + sum);

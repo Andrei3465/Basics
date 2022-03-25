@@ -14,13 +14,13 @@ public class Task1 {
 
 		ResultPrinter.printToConsoleLine("max{min(a, b), min(c, d):");
 		ResultPrinter.printToConsole("Enter number a: ");
-		double numA = ConsoleReader.getDoubleFromConsole(27);
+		double numA = ConsoleReader.getDoubleFromConsole(scanner, 27);
 		ResultPrinter.printToConsole("Enter number b: ");
-		double numB = ConsoleReader.getDoubleFromConsole(36);
+		double numB = ConsoleReader.getDoubleFromConsole(scanner, 36);
 		ResultPrinter.printToConsole("Enter number c: ");
-		double numC = ConsoleReader.getDoubleFromConsole(57);
+		double numC = ConsoleReader.getDoubleFromConsole(scanner, 57);
 		ResultPrinter.printToConsole("Enter number d: ");
-		double numD = ConsoleReader.getDoubleFromConsole(83);
+		double numD = ConsoleReader.getDoubleFromConsole(scanner, 83);
 
 		double max = Logicutil.maxForMinMax(numA, numB, numC, numD);
 		ResultPrinter.printToConsoleLine("max =  " + max);

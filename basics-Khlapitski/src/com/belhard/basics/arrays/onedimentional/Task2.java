@@ -14,7 +14,7 @@ public class Task2 {
 		Random random = new Random();
 		Scanner scanner = new Scanner(System.in);
 		ResultPrinter.printToConsole("Enter the length of the array: ");
-		double[] array = Arrayutil.arrayRandomDouble();
+		double[] array = Arrayutil.arrayRandomDouble(scanner);
 		int[] result = Logicutil.countingNumbers(array);
 
 		ResultPrinter.printToConsoleLine("Source array:" + Arrays.toString(array));

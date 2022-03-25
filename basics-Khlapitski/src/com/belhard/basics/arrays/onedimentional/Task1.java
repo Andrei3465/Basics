@@ -14,9 +14,9 @@ public class Task1 {
 		Scanner scanner = new Scanner(System.in);
 		ResultPrinter.printToConsoleLine("Sum of array elements N of multiples K");
 		ResultPrinter.printToConsole("Enter the number K: ");
-		double numbK = ConsoleReader.getDoubleFromConsole(3);
+		double numbK = ConsoleReader.getDoubleFromConsole(scanner, 3);
 		ResultPrinter.printToConsole("Enter the length of the array N:");
-		int[] array = Arrayutil.arrayRandomInt();
+		int[] array = Arrayutil.arrayRandomInt(scanner);
 		int sum = Logicutil.sumOfMultiples(numbK, array);
 
 		ResultPrinter.printToConsoleLine("Source array:" + Arrays.toString(array));

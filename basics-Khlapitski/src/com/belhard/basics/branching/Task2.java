@@ -11,7 +11,7 @@ public class Task2 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		ResultPrinter.printToConsoleLine("Enter number: x :");
-		double numA = ConsoleReader.getDoubleFromConsole(5);
+		double numA = ConsoleReader.getDoubleFromConsole(scanner, 5);
 
 		double result = Logicutil.equation(numA);
 		ResultPrinter.printToConsole("Meaning function :" + result);

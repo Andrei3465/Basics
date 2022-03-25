@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class Arrayutil {
 
-	public static int[] arrayRandomInt() {
-		Scanner scanner = new Scanner(System.in);
+	public static int[] arrayRandomInt(Scanner scanner) {
 		Random random = new Random();
 		int[] array = new int[scanner.nextInt()];
 		for (int i = 0; i < array.length; i++) {
@@ -16,8 +15,7 @@ public class Arrayutil {
 		return array;
 	}
 
-	public static double[] arrayRandomDouble() {
-		Scanner scanner = new Scanner(System.in);
+	public static double[] arrayRandomDouble(Scanner scanner) {
 		Random random = new Random();
 		double[] array = new double[scanner.nextInt()];
 		for (int i = 0; i < array.length; i++) {

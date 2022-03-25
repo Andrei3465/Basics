@@ -13,14 +13,15 @@ public class Task2 {
 		Scanner scanner = new Scanner(System.in);
 		ResultPrinter.printToConsoleLine("Determining the value of the function Y on the segment A to B with a step H");
 		ResultPrinter.printToConsole("Enter the number X: ");
-		double x = ConsoleReader.getDoubleFromConsole(2);
+		double x = ConsoleReader.getDoubleFromConsole(scanner, 2);
 		ResultPrinter.printToConsole("Enter the number A: ");
-		double beginA = ConsoleReader.getDoubleFromConsole(10);
+		double beginA = ConsoleReader.getDoubleFromConsole(scanner, 10);
 		ResultPrinter.printToConsole("Enter the number B: ");
-		double endB = ConsoleReader.getDoubleFromConsole(10);
+		double endB = ConsoleReader.getDoubleFromConsole(scanner, 10);
 		ResultPrinter.printToConsole("Enter the number H: ");
-		double stepH = ConsoleReader.getDoubleFromConsole(3);
+		double stepH = ConsoleReader.getDoubleFromConsole(scanner, 3);
 
+	
 		for (double i = beginA; i <= endB; i = i + stepH) {
 			x = i;
 			double result;
@@ -29,8 +30,9 @@ public class Task2 {
 			} else {
 				result = x + 4;
 			}
-			ResultPrinter.printToConsoleLine("Function value y = " + result + " at x = " + x);
-		}
 
+		ResultPrinter.printToConsoleLine("Function value y = " + result + " at x = " + x);
 	}
+
+}
 }

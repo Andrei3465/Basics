@@ -14,7 +14,7 @@ public class Task3 {
 		Random random = new Random();
 		Scanner scanner = new Scanner(System.in);
 		ResultPrinter.printToConsole("Enter the length of the sequence: ");
-		int numElements = ConsoleReader.getIntFromConsole(10);
+		int numElements = ConsoleReader.getIntFromConsole(scanner, 10);
 
 		int iMin = 0;
 		int min = Integer.MAX_VALUE;

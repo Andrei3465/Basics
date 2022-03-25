@@ -11,7 +11,7 @@ public class Task3 {
 		Scanner scanner = new Scanner(System.in);
 		ResultPrinter.printToConsole("Enter a value in seconds: ");
 
-		int enteredTime = ConsoleReader.getIntFromConsole(36000);
+		int enteredTime = ConsoleReader.getIntFromConsole(scanner, 36000);
 
 		int timeInHour = enteredTime / 3600;
 		int timeInMinutes = (enteredTime / 60) % 60;

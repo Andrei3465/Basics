@@ -13,11 +13,11 @@ public class Task1 {
 		Scanner scanner = new Scanner(System.in);
 
 		ResultPrinter.printToConsole("Please enter number a :");
-		double numA = ConsoleReader.getDoubleFromConsole(8);
+		double numA = ConsoleReader.getDoubleFromConsole(scanner, 8);
 		ResultPrinter.printToConsole("Please enter number b :");
-		double numB = ConsoleReader.getDoubleFromConsole(6);
+		double numB = ConsoleReader.getDoubleFromConsole(scanner, 6);
 		ResultPrinter.printToConsole("Please enter number c :");
-		double numC = ConsoleReader.getDoubleFromConsole(7);
+		double numC = ConsoleReader.getDoubleFromConsole(scanner, 7);
 
 		double result = ((numA - 3) * numB / 2) + numC;
 		ResultPrinter.printToConsole("Meaning function z = " + result);

@@ -11,7 +11,7 @@ public class Task2 {
 
 		Scanner scanner = new Scanner(System.in);
 		ResultPrinter.printToConsole("Please enter number in format (nnn.ddd); ");
-		double enteredNum = ConsoleReader.getDoubleFromConsole(123.321);
+		double enteredNum = ConsoleReader.getDoubleFromConsole(scanner, 123.321);
 
 		double result = (enteredNum * 1000) % 1000 + (int) enteredNum / 1000.0;
 		ResultPrinter.printToConsole("Result: " + result);
